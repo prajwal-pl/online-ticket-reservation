@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function TicketCards() {
   const tickets = [
@@ -38,12 +39,14 @@ export function TicketCards() {
     <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold mb-6">Ticket Register</h1>
-        <Button
-          variant="outline"
-          className="px-4 py-2 rounded-full text-xs font-medium"
-        >
-          Add
-        </Button>
+        <Link href={"/add"}>
+          <Button
+            variant="outline"
+            className="px-4 py-2 rounded-full text-xs font-medium"
+          >
+            Add
+          </Button>
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {tickets.map((ticket) => (
