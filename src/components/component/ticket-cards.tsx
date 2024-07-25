@@ -38,7 +38,7 @@ export function TicketCards({ tickets }: { tickets: Ticket[] }) {
   return (
     <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold mb-6">Ticket Register</h1>
+        <h1 className="text-3xl font-bold mb-6">Ticket Registration</h1>
         <Dialog>
           <DialogTrigger
             className="px-4 py-2 rounded-full text-xs font-medium bg-black
